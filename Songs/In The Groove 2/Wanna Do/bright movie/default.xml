@@ -1,0 +1,16 @@
+<ActorFrame><children>
+	<Layer
+	Type="Quad"
+	OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;zoomtowidth,SCREEN_WIDTH;zoomtoheight,SCREEN_HEIGHT;diffuse,0.1,0.1,0.1,1"
+	/>
+	<Layer
+	Type="AutoActor"
+	File="../wannado.mpg"
+	OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;zoomtowidth,SCREEN_WIDTH;zoomtoheight,SCREEN_HEIGHT*1.2;blend,add"
+	/>
+	<Layer
+	Type="AutoActor"
+	File="../wannado.mpg"
+	OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;zoomtowidth,SCREEN_WIDTH;zoomtoheight,SCREEN_HEIGHT*1.2;blend,add;diffuse,0.2,0.2,0.2,1"
+	/>
+</children></ActorFrame>

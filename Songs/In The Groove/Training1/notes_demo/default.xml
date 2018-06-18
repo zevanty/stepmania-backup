@@ -1,0 +1,21 @@
+<ActorFrame> <children>
+	<!-- #4: NOTES DEMO -->
+	<Layer
+		Type="BitmapText"
+		Font="_big blue glow"
+		InitCommand="wrapwidthpixels,SCREEN_WIDTH-100;mtext,'NotesDemo1'"
+		OnCommand="x,SCREEN_CENTER_X;y,338;diffusealpha,0;sleep,2;linear,0.3;diffusealpha,1;sleep,4;linear,0.3;diffusealpha,0"
+	/>
+
+	<Layer
+		File="now"
+		Condition="GAMESTATE:IsHumanPlayer(PLAYER_1)"
+		InitCommand="x,SCREEN_CENTER_X-160;y,57"
+	/>
+
+	<Layer
+		File="now"
+		Condition="GAMESTATE:IsHumanPlayer(PLAYER_2)"
+		InitCommand="x,SCREEN_CENTER_X+160;y,57"
+	/>
+</children> </ActorFrame>

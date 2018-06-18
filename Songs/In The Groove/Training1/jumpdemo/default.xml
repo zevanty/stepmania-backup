@@ -1,0 +1,19 @@
+<ActorFrame InitCommand="draworder,-2"> <children>
+	<!-- #37a JUMP DEMO -->
+
+	<ActorFrame 
+		OnCommand="y,SCREEN_TOP+116"
+	> <children>
+		<Layer
+			File="jump arrows"
+			Condition="GAMESTATE:IsHumanPlayer(PLAYER_1)"
+			OnCommand="glowblink;x,SCREEN_CENTER_X-160;diffusealpha,0;linear,0.4;diffusealpha,1;sleep,4;linear,0.5;diffusealpha,0"
+		/>
+
+		<Layer
+			File="jump arrows"
+			Condition="GAMESTATE:IsHumanPlayer(PLAYER_2)"
+			OnCommand="glowblink;x,SCREEN_CENTER_X+160;diffusealpha,0;linear,0.4;diffusealpha,1;sleep,4;linear,0.5;diffusealpha,0"
+		/>
+	</children> </ActorFrame>
+</children> </ActorFrame>

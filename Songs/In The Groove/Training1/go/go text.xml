@@ -1,0 +1,8 @@
+<ActorFrame><children>
+	<Layer
+		Type="BitmapText"
+		Font="_big blue glow"
+		InitCommand="wrapwidthpixels,SCREEN_WIDTH-100;mtext,'Go'"
+		OnCommand="diffusealpha,0;sleep,3.5;linear,0.1;diffusealpha,1;sleep,.2;linear,0.3;diffusealpha,0;linear,0.1;diffusealpha,1;sleep,1;linear,0.3;diffusealpha,0"
+	/>
+</children></ActorFrame>

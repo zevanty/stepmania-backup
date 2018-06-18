@@ -1,0 +1,185 @@
+<ActorFrame> <children>
+	<ActorFrame> <children>
+		<!-- Life bar -->
+		<ActorFrame
+			Condition="GAMESTATE:IsHumanPlayer(PLAYER_1)"
+			OnCommand="x,SCREEN_LEFT+24;y,SCREEN_CENTER_Y+30"
+		> <children>
+			<Layer
+				File="life dark"
+				OnCommand="diffusealpha,0;sleep,24;linear,0.3;diffusealpha,1;sleep,3;linear,0.3;diffusealpha,0"
+			/>
+
+			<Layer
+				File="life mostly dead"
+				OnCommand="diffusealpha,0;sleep,19;linear,0.3;diffusealpha,1;sleep,4.7;linear,0.3;diffusealpha,0"
+			/>
+
+			<Layer
+				File="life low"
+				OnCommand="diffusealpha,0;sleep,14;linear,0.3;diffusealpha,1;sleep,5;linear,0.3;diffusealpha,0"
+			/>
+
+			<Layer
+				File="life medium"
+				OnCommand="diffusealpha,0;sleep,1;linear,0.3;diffusealpha,1;sleep,13.2;diffusealpha,0"
+			/>
+
+			<Layer
+				File="life high"
+				OnCommand="diffusealpha,0;sleep,10;linear,0.3;diffusealpha,1;sleep,3;linear,0.3;diffusealpha,0"
+			/>
+
+			<Layer
+				File="life red"
+				OnCommand="diffusealpha,0;sleep,24;linear,0.2;diffusealpha,1;sleep,0.3;linear,0.2;diffusealpha,0;sleep,0.3;linear,0.2;diffusealpha,1;sleep,0.3;linear,0.2;diffusealpha,0;sleep,0.3;linear,0.2;diffusealpha,1;sleep,0.3;linear,0.2;diffusealpha,0"
+			/>
+		</children> </ActorFrame>
+		<ActorFrame
+			Condition="GAMESTATE:IsHumanPlayer(PLAYER_2)"
+			OnCommand="x,SCREEN_RIGHT-24;y,SCREEN_CENTER_Y+30"
+		> <children>
+			<Layer
+				File="life dark"
+				OnCommand="diffusealpha,0;sleep,24;linear,0.3;diffusealpha,1;sleep,3;linear,0.3;diffusealpha,0"
+			/>
+
+			<Layer
+				File="life mostly dead"
+				OnCommand="diffusealpha,0;sleep,19;linear,0.3;diffusealpha,1;sleep,4.7;linear,0.3;diffusealpha,0"
+			/>
+
+			<Layer
+				File="life low"
+				OnCommand="diffusealpha,0;sleep,14;linear,0.3;diffusealpha,1;sleep,5;linear,0.3;diffusealpha,0"
+			/>
+
+			<Layer
+				File="life medium"
+				OnCommand="diffusealpha,0;sleep,1;linear,0.3;diffusealpha,1;sleep,13.2;diffusealpha,0"
+			/>
+
+			<Layer
+				File="life high"
+				OnCommand="diffusealpha,0;sleep,10;linear,0.3;diffusealpha,1;sleep,3;linear,0.3;diffusealpha,0"
+			/>
+
+			<Layer
+				File="life red"
+				OnCommand="diffusealpha,0;sleep,24;linear,0.2;diffusealpha,1;sleep,0.3;linear,0.2;diffusealpha,0;sleep,0.3;linear,0.2;diffusealpha,1;sleep,0.3;linear,0.2;diffusealpha,0;sleep,0.3;linear,0.2;diffusealpha,1;sleep,0.3;linear,0.2;diffusealpha,0"
+			/>
+		</children> </ActorFrame>
+	</children> </ActorFrame>
+
+	<ActorFrame> <children>
+		<!-- Arrows -->
+		<ActorFrame
+			Condition="GAMESTATE:IsHumanPlayer(PLAYER_1)"
+			OnCommand="x,SCREEN_LEFT+52;y,SCREEN_CENTER_Y+30"
+		> <children>
+			<Layer
+				File="left pointer"
+				OnCommand="x,14;y,-38;diffusealpha,0;sleep,2;linear,0.1;diffusealpha,1;sleep,.2;linear,0.3;diffusealpha,0;linear,0.1;diffusealpha,1;sleep,1;linear,0.3;diffusealpha,0"
+			/>
+
+			<Layer
+				File="left pointer"
+				OnCommand="y,-112;diffusealpha,0;sleep,11;linear,0.1;diffusealpha,1;sleep,.2;linear,0.3;diffusealpha,0;linear,0.1;diffusealpha,1;sleep,1;linear,0.3;diffusealpha,0"
+			/>
+
+			<Layer
+				File="left pointer"
+				OnCommand="y,1;diffusealpha,0;sleep,13;linear,0.3;diffusealpha,1;sleep,.5;linear,0.3;diffusealpha,0"
+			/>
+
+			<Layer
+				File="left pointer"
+				OnCommand="y,102;diffusealpha,0;sleep,15;linear,0.3;diffusealpha,1;sleep,1;linear,0.3;diffusealpha,0"
+			/>
+
+			<Layer
+				File="left pointer"
+				OnCommand="y,129;diffusealpha,0;sleep,19;linear,0.1;diffusealpha,1;sleep,0.5;linear,0.1;diffusealpha,0;linear,0.1;diffusealpha,1;sleep,0.5;linear,0.1;diffusealpha,0"
+			/>
+		</children> </ActorFrame>
+		<ActorFrame
+			Condition="GAMESTATE:IsHumanPlayer(PLAYER_2)"
+			OnCommand="x,SCREEN_RIGHT-52;y,SCREEN_CENTER_Y+30"
+		> <children>
+			<Layer
+				File="right pointer"
+				OnCommand="x,-14;y,-38;diffusealpha,0;sleep,2;linear,0.1;diffusealpha,1;sleep,.2;linear,0.3;diffusealpha,0;linear,0.1;diffusealpha,1;sleep,1;linear,0.3;diffusealpha,0"
+			/>
+
+			<Layer
+				File="right pointer"
+				OnCommand="y,-112;diffusealpha,0;sleep,11;linear,0.1;diffusealpha,1;sleep,.2;linear,0.3;diffusealpha,0;linear,0.1;diffusealpha,1;sleep,1;linear,0.3;diffusealpha,0"
+			/>
+
+			<Layer
+				File="right pointer"
+				OnCommand="y,1;diffusealpha,0;sleep,13;linear,0.3;diffusealpha,1;sleep,.5;linear,0.3;diffusealpha,0"
+			/>
+
+			<Layer
+				File="right pointer"
+				OnCommand="y,102;diffusealpha,0;sleep,15;linear,0.3;diffusealpha,1;sleep,1;linear,0.3;diffusealpha,0"
+			/>
+
+			<Layer
+				File="right pointer"
+				OnCommand="y,129;diffusealpha,0;sleep,19;linear,0.1;diffusealpha,1;sleep,0.5;linear,0.1;diffusealpha,0;linear,0.1;diffusealpha,1;sleep,0.5;linear,0.1;diffusealpha,0"
+			/>
+		</children> </ActorFrame>
+	</children> </ActorFrame>
+
+	<ActorFrame> <children>
+		<!-- #12: LIFEMETER INTRO -->
+		<Layer
+			Type="BitmapText"
+			Font="_big blue glow"
+			InitCommand="wrapwidthpixels,SCREEN_WIDTH-150;mtext,'LifeMeter1'"
+			OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y-16;diffusealpha,0;sleep,1;linear,0.3;diffusealpha,1;sleep,6;linear,0.3;diffusealpha,0"
+		/>
+
+		<Layer
+			Type="BitmapText"
+			Font="_big blue glow"
+			InitCommand="wrapwidthpixels,SCREEN_WIDTH-150;mtext,'LifeMeter2'"
+			OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+110;diffusealpha,0;sleep,4;linear,0.3;diffusealpha,1;sleep,3;linear,0.3;diffusealpha,0"
+		/>
+	</children> </ActorFrame>
+
+	<!-- #13: LIFEMETER 2: HIGH -->
+	<Layer
+		Type="BitmapText"
+		Font="_big blue glow"
+		InitCommand="wrapwidthpixels,SCREEN_WIDTH-150;mtext,'LifeMeter3'"
+		OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y-16;diffusealpha,0;sleep,8.5;queuemessage,HideFloor;sleep,.5;linear,0.3;diffusealpha,1;sleep,3.5;linear,0.3;diffusealpha,0"
+	/>
+
+	<!-- #14: LIFEMETER 3: LOW -->
+	<Layer
+		Type="BitmapText"
+		Font="_big blue glow"
+		InitCommand="wrapwidthpixels,SCREEN_WIDTH-150;mtext,'LifeMeter4'"
+		OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+60;diffusealpha,0;sleep,13;linear,0.3;diffusealpha,1;sleep,3;linear,0.3;diffusealpha,0"
+	/>
+
+	<!-- #15: LIFEMETER 4: MOSTLY DEAD -->
+	<Layer
+		Type="BitmapText"
+		Font="_big blue glow"
+		InitCommand="wrapwidthpixels,SCREEN_WIDTH-150;mtext,'LifeMeter5'"
+		OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+170;diffusealpha,0;sleep,18;linear,0.3;diffusealpha,1;sleep,3;linear,0.3;diffusealpha,0"
+	/>
+
+	<Layer
+		Type="BitmapText"
+		Font="_big blue glow"
+		InitCommand="wrapwidthpixels,SCREEN_WIDTH-150;mtext,'LifeMeter6'"
+		OnCommand="x,SCREEN_CENTER_X;y,310;diffusealpha,0;sleep,23;linear,0.3;diffusealpha,1;sleep,4;linear,0.3;diffusealpha,0"
+	/>
+
+</children> </ActorFrame>
+

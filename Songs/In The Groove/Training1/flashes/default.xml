@@ -1,0 +1,93 @@
+<ActorFrame> <children>
+	<!-- #8: FLASHES -->
+
+	<Layer
+		Type="BitmapText"
+		Font="_big blue glow"
+		InitCommand="wrapwidthpixels,SCREEN_WIDTH-100;mtext,'Flashes1'"
+		OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;diffusealpha,0;sleep,.5;queuemessage,HideFloor;sleep,.5;linear,0.3;diffusealpha,1;sleep,7;linear,0.3;diffusealpha,0"
+	/>
+
+	<ActorFrame
+		InitCommand="x,SCREEN_CENTER_X;y,SCREEN_TOP+30"
+		OnCommand="hibernate,1.5"
+	><children>
+		<Layer Type="Quad" InitCommand="setsize,600,15;diffuse,#0193E730;fadetop,.5;fadebottom,.5;y,12"
+			OnCommand="faderight,0.1;cropright,1;linear,0.7;cropright,-0.1" />
+		<Layer Type="Quad" InitCommand="setsize,600,2;diffuse,#D9E9FC50;y,12"
+			OnCommand="faderight,0.1;cropright,1;linear,0.7;cropright,-0.1" />
+		<Layer File="@THEME:GetPathG('Judgment','label')" InitCommand="pause;setstate,10;zoom,0.4;x,-250;y,1"
+			OnCommand="addy,-60;sleep,0.1*0;accelerate,0.3;addy,60;sleep,0.1*5;sleep,6.5;linear,0.3;diffusealpha,0" />
+		<Layer File="@THEME:GetPathG('Judgment','label')" InitCommand="pause;setstate,8;zoom,0.5;x,-150"
+			OnCommand="addy,-60;sleep,0.1*1;accelerate,0.3;addy,60;sleep,0.1*4;sleep,6.5;linear,0.3;diffusealpha,0" />
+		<Layer File="@THEME:GetPathG('Judgment','label')" InitCommand="pause;setstate,6;zoom,0.5;x,-50"
+			OnCommand="addy,-60;sleep,0.1*2;accelerate,0.3;addy,60;sleep,0.1*3;sleep,6.5;linear,0.3;diffusealpha,0" />
+		<Layer File="@THEME:GetPathG('Judgment','label')" InitCommand="pause;setstate,4;zoom,0.5;x,50"
+			OnCommand="addy,-60;sleep,0.1*3;accelerate,0.3;addy,60;sleep,0.1*2;sleep,6.5;linear,0.3;diffusealpha,0" />
+		<Layer File="@THEME:GetPathG('Judgment','label')" InitCommand="pause;setstate,2;zoom,0.5;x,150"
+			OnCommand="addy,-60;sleep,0.1*4;accelerate,0.3;addy,60;sleep,0.1*1;sleep,6.5;linear,0.3;diffusealpha,0" />
+		<Layer File="@THEME:GetPathG('Judgment','label')" InitCommand="pause;setstate,0;zoom,0.5;x,250"
+			OnCommand="addy,-60;sleep,0.1*5;accelerate,0.3;addy,60;sleep,0.1*0;sleep,6.5;linear,0.3;diffusealpha,0" />
+	</children></ActorFrame>
+
+	<!--  flash decent  -->
+	<ActorFrame
+		OnCommand="y,SCREEN_TOP+112"
+	> <children>
+		<Layer
+			File="decent flash"
+			Condition="GAMESTATE:IsHumanPlayer(PLAYER_1)"
+			OnCommand="x,SCREEN_CENTER_X-160+95;diffusealpha,0;sleep,3;linear,0.1;diffusealpha,1;sleep,0.7;linear,0.1;diffusealpha,0"
+		/>
+
+		<Layer
+			File="decent flash"
+			Condition="GAMESTATE:IsHumanPlayer(PLAYER_2)"
+			OnCommand="x,SCREEN_CENTER_X+160+95;diffusealpha,0;sleep,3;linear,0.1;diffusealpha,1;sleep,0.7;linear,0.1;diffusealpha,0"
+		/>
+
+		<Layer
+			File="excellent flash"
+			Condition="GAMESTATE:IsHumanPlayer(PLAYER_1)"
+			OnCommand="x,SCREEN_CENTER_X-160+95;diffusealpha,0;sleep,4;linear,0.1;diffusealpha,1;sleep,0.7;linear,0.1;diffusealpha,0"
+		/>
+
+		<Layer
+			File="excellent flash"
+			Condition="GAMESTATE:IsHumanPlayer(PLAYER_2)"
+			OnCommand="x,SCREEN_CENTER_X+160+95;diffusealpha,0;sleep,4;linear,0.1;diffusealpha,1;sleep,0.7;linear,0.1;diffusealpha,0"
+		/>
+	</children> </ActorFrame>
+
+	<Layer
+		File="decent judge"
+		Condition="GAMESTATE:IsHumanPlayer(PLAYER_1)"
+		OnCommand="x,SCREEN_CENTER_X-160;y,SCREEN_CENTER_Y-75;diffusealpha,0;sleep,3;linear,0.1;diffusealpha,1;sleep,0.7;linear,0.1;diffusealpha,0"
+	/>
+	<Layer
+		File="decent judge"
+		Condition="GAMESTATE:IsHumanPlayer(PLAYER_2)"
+		OnCommand="x,SCREEN_CENTER_X+160;y,SCREEN_CENTER_Y-75;diffusealpha,0;sleep,3;linear,0.1;diffusealpha,1;sleep,0.7;linear,0.1;diffusealpha,0"
+	/>
+
+	<!--  flash excellent  -->
+	<Layer
+		File="excellent judge"
+		Condition="GAMESTATE:IsHumanPlayer(PLAYER_1)"
+		OnCommand="x,SCREEN_CENTER_X-160;y,SCREEN_CENTER_Y-75;diffusealpha,0;sleep,4;linear,0.1;diffusealpha,1;sleep,0.7;linear,0.1;diffusealpha,0"
+	/>
+
+	<Layer
+		File="excellent judge"
+		Condition="GAMESTATE:IsHumanPlayer(PLAYER_2)"
+		OnCommand="x,SCREEN_CENTER_X+160;y,SCREEN_CENTER_Y-75;diffusealpha,0;sleep,4;linear,0.1;diffusealpha,1;sleep,0.7;linear,0.1;diffusealpha,0"
+	/>
+
+	<!--  finish  -->
+	<Layer
+		Type="BitmapText"
+		Font="_big blue glow"
+		InitCommand="wrapwidthpixels,SCREEN_WIDTH-50;mtext,'Flashes2'"
+		OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+140;diffusealpha,0;sleep,5.5;linear,0.3;diffusealpha,1;sleep,2.5;linear,0.3;diffusealpha,0"
+	/>
+</children> </ActorFrame>

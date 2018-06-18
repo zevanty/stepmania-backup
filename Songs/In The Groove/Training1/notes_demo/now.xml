@@ -1,0 +1,8 @@
+<ActorFrame> <children>
+	<Layer
+		Type="BitmapText"
+		Font="_big blue glow"
+		InitCommand="mtext,'Now'"
+		OnCommand="diffusealpha,0;sleep,4.5;linear,0.1;diffusealpha,1;sleep,1.5;linear,0.3;diffusealpha,0"
+	/>
+</children> </ActorFrame>

@@ -1,0 +1,10 @@
+<ActorFrame> <children>
+	<!-- #33: TRY IT 3b : LEFT RIGHT ALT -->
+
+	<Layer
+		Type="BitmapText"
+		Font="_tutorial"
+		InitCommand="wrapwidthpixels,SCREEN_WIDTH-100;mtext,'TryIt3b'"
+		OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;diffusealpha,0;sleep,1;linear,0.3;diffusealpha,1;sleep,4;linear,0.3;diffusealpha,0"
+	/>
+</children> </ActorFrame>

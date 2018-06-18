@@ -1,0 +1,5 @@
+<!-- #9b HIGHLIGHT PANELS DURING PLAY -->
+<Layer
+	Type="Quad"
+	OnCommand="diffusealpha,0;queuemessage,HighlightDown;sleep,.2;queuemessage,UnhighlightDown;sleep,.1"
+/>

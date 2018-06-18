@@ -1,0 +1,23 @@
+<ActorFrame> <children>
+	<!-- #26: WRAP UP -->
+	<Layer
+		File="../blockers/full black"
+		OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;diffusealpha,0;linear,0.3;diffusealpha,1;sleep,10"
+	/>
+	<!-- END BLOCKERS -->
+
+	<Layer
+		Type="BitmapText"
+		Font="_big blue glow"
+		InitCommand="wrapwidthpixels,SCREEN_WIDTH-100;mtext,'WrapUp1'"
+		OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y-82;diffusealpha,0;sleep,1;linear,0.3;diffusealpha,1;sleep,5;linear,0.3;diffusealpha,0"
+
+	/>
+
+	<Layer
+		Type="BitmapText"
+		Font="_big blue glow"
+		InitCommand="wrapwidthpixels,SCREEN_WIDTH-100;mtext,'WrapUp2'"
+		OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+76;diffusealpha,0;sleep,3;linear,0.3;diffusealpha,1;sleep,3;linear,0.3;diffusealpha,0"
+	/>
+</children> </ActorFrame>

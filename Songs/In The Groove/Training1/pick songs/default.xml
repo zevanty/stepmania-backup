@@ -1,0 +1,31 @@
+<ActorFrame> <children>
+	<!-- #27: PICK SONGS -->
+
+	<Layer
+		File="../blockers/full black"
+		OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;diffusealpha,0;sleep,1;linear,0.3;diffusealpha,1;sleep,7"
+	/>
+
+
+	<Layer
+		Type="BitmapText"
+		Font="_big blue glow"
+		InitCommand="wrapwidthpixels,SCREEN_WIDTH-100;mtext,'PickSongs'"
+		OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y-70;diffusealpha,0;sleep,1;linear,0.3;diffusealpha,1;sleep,6;linear,0.3;diffusealpha,0"
+	/>
+
+	<Layer
+		File="difficulties"
+		OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+120;diffusealpha,0;sleep,2;linear,0.3;diffusealpha,1;sleep,5;linear,0.3;diffusealpha,0"
+	/>
+
+	<Layer
+		File="down pointer"
+		OnCommand="x,SCREEN_CENTER_X-6;y,SCREEN_CENTER_Y+62;diffusealpha,0;sleep,3;linear,0.1;diffusealpha,1;sleep,0.5;linear,0.1;diffusealpha,0;linear,0.1;diffusealpha,1;sleep,0.5;linear,0.1;diffusealpha,0"
+	/>
+
+	<Layer
+		File="right pointer"
+		OnCommand="x,SCREEN_CENTER_X-84;y,SCREEN_CENTER_Y+90;diffusealpha,0;sleep,3;linear,0.1;diffusealpha,1;sleep,0.5;linear,0.1;diffusealpha,0;linear,0.1;diffusealpha,1;sleep,0.5;linear,0.1;diffusealpha,0"
+	/>
+</children> </ActorFrame>

@@ -1,0 +1,1 @@
+Backup the `Data\MachineProfile\Stats.xml` file if you want to preserve your high score.

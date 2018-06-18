@@ -1,0 +1,11 @@
+<ActorFrame> <children>
+	<!-- #5: TRY IT RIGHT 1 -->
+
+	<Layer
+		Type="BitmapText"
+		Font="_tutorial"
+		InitCommand="wrapwidthpixels,SCREEN_WIDTH-100;mtext,'TryIt1a'"
+		OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;diffusealpha,0;sleep,1;queuemessage,ShowFloor;linear,0.3;diffusealpha,1;sleep,3;linear,0.3;diffusealpha,0"
+	/>
+</children> </ActorFrame>
+
